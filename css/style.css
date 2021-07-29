@@ -180,13 +180,13 @@ div#sea {
   animation-duration: 5s;
   animation-direction: unset;
   /* transition: background-color .5s ease; */
-
+  
 }
 @keyframes bg {
   0%{
-    background-image: url("C:/Users/shiva/OneDrive/Documents/Birthday/Birthday/images/bg4.jpg");
-  background-repeat: no-repeat;
-  background-color: black;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-image: url("images/bg4.jpg");
   background-size: 90%;
   background-position: center;
   }
