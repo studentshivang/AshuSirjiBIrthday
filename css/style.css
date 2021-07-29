@@ -109,7 +109,7 @@ div.container{
   margin-top: 10rem;
   /* margin-left: auto; */
   animation-name: boot; 
-  animation-duration: 12s;
+  animation-duration: 11s;
   animation-iteration-count: 1;
   animation-direction: unset;
   visibility: visible ;
@@ -186,7 +186,7 @@ div#sea {
   0%{
     background-repeat: no-repeat;
     background-color: black;
-    background-image: url("images/bg4.jpg");
+    background-image: url("/images/image.jpg");
   background-size: 90%;
   background-position: center;
   }
