@@ -9,7 +9,7 @@ body {
   overflow: hidden;
   /* background-color: cyan; */
   /* background-color: radial-gradient(circle at center top, #23485a, #0d0246);; */
-  background-image: radial-gradient(circle at center top, #23485a, #0d0246);
+  background-image: linear-gradient(rgb(32, 209, 218),rgb(255, 255, 255));
 
 }
 
@@ -158,15 +158,6 @@ div.container{
   width: 230px;
 }
 
-div#sea {
-  background-color: blue;
-  height: 85px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-image: radial-gradient(circle at center top, #23485a, #0d0246);
-}
 
 .merrywrap {
   position: absolute;
@@ -543,49 +534,39 @@ div#sea {
     text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
   }
 }
-.moon {
+.sun {
   position: absolute;
   top: 10%;
   right: 200px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: none;
+  /* background: white; */
   /* box-shadow: inset 20px -10px 0 0 #b9b9b9; */
-  box-shadow: inset 20px -10px 0 0 #aaa;
+  /* box-shadow: inset 20px -10px 0 0 gold; */
 }
 
-.moon .crater1 {
+.sun i{ 
+  top: 100%;
+  color: #fdc56d;
+  transform: scale(9)!important;
   position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #bbb;
-  box-shadow: inset -3px 1.5px 0 0 #aaa;
-  top: 20px;
-  right: 20px;
+  -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    
 }
-
-.moon .crater2 {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #bbb;
-  box-shadow: inset -1px 0.5px 0 0 #aaa;
-  top: 45px;
-  right: 50px;
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
 }
-
-.moon .crater3 {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #bbb;
-  box-shadow: inset -1.5px 0.75px 0 0 #aaa;
-  top: 60px;
-  right: 25px;
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
 
 @media (min-width: 1000px) {
@@ -629,9 +610,6 @@ div#sea {
     width: 160px;
   }
 
-  div#beach {
-    background-size: 2000px;
-  }
 
   div#video {
     right: 290px;
